@@ -183,6 +183,72 @@ footer a:hover {
 
 /******** end footer *********/
 
+/* Hero */
+.hero {
+    background-image: url('../assets/images/fondo.jpg');
+    height: 60vh;
+    background-color: #777;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    /*Padding No responsive
+     padding: 200px 0px 200px 30px; */
+}
+
+.hero .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+    margin: var(--margingrid) 0;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transform: translateX(5px) scale(1.5);
+}
+
+.boton i {
+    /* Efecto entrada/salida transition en el padre*/
+    transition: transform 0.5s;
+}
+
+.hero .social {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+/* fin hero */
 
 @media (min-width: 48.000em) {
 
