@@ -250,6 +250,42 @@ footer a:hover {
 
 /* fin hero */
 
+/* Titulo de main como h1*/
+
+main .container h1 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main .container>div>span {
+    color: var(--colorprincipal);
+}
+
+main .container .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+}
+
+main .container .underline span {
+    text-align: center;
+    display: block;
+}
+
+main .container .underline hr {
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+
+/* fin titulo de main */
+
 /* inicio OurService*/
 
 main section {
@@ -440,6 +476,11 @@ main #ourblog .fecha {
 
 
 
+/* inicio menu */
+
+
+
+/* fin menu */
 
 /* 600px */
 @media(min-width: 37.500em) {
