@@ -429,7 +429,7 @@ main #ourblog .fecha {
     text-align: center;
     padding: calc(var(--margingrid) - 0.5em);
     background-color: var(--colorprincipal);
-    opacity: 0.6;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
