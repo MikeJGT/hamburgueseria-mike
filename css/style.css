@@ -477,8 +477,89 @@ main #ourblog .fecha {
 
 
 /* inicio menu */
+#todaymenu {
+    background-color: var(--colorsecundario);
+    padding-top: 2em;
+}
 
 
+#todaymenu h1 {
+    color: white;
+}
+
+#todaymenu h1 span {
+    color: var(--colorprincipal);
+}
+
+/* 
+#todaymenu .grid aside {
+    padding: 2em;
+}
+
+#todaymenu .grid section {
+    padding: 2em;
+} */
+
+aside .nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+aside .nav-menu li {
+    padding: var(--margingrid);
+    border-radius: 2px;
+}
+
+aside .nav-menu li:hover {
+    background-color: var(--colorprincipal);
+}
+
+#todaymenu .todayoffer {
+    padding: 1em;
+}
+
+#todaymenu .todayoffer hr {
+    width: 4em;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+    margin-left: 0px;
+}
+
+#todaymenu .todayoffer h3 {
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 700;
+}
+
+#todaymenu .todayoffer p {
+    color: #aaa;
+}
+
+#todaymenu article {
+    padding: var(--margingrid) 0;
+    color: white;
+}
+
+#todaymenu .espacio {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1em 0;
+}
+
+#todaymenu article h3 {
+    font-weight: 700;
+}
+
+#todaymenu article span {
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+#todaymenu article p {
+    padding: var(--margingrid) 0;
+}
 
 /* fin menu */
 
@@ -558,6 +639,22 @@ main #ourblog .fecha {
     }
 
     /* fin blog */
+
+    /* inicio menu 
+    #todaymenu .grid {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #todaymeu .grid aside {
+        width: 30%;
+    }
+
+    #todaymenu .grid section {
+        width: 70%;
+    }
+
+     fin menu */
 }
 
 /* 1004px */
