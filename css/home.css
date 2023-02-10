@@ -1,0 +1,231 @@
+/* Header y footer (Aquí van el resto de las importaciones)*/
+@import url('./headerFooter.css');
+
+
+
+
+/* Hero */
+.hero {
+    background-image: url('../assets/images/fondo.jpg');
+    height: 60vh;
+    background-color: #777;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    /*Padding No responsive
+     padding: 200px 0px 200px 30px; */
+}
+
+.hero .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15em;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+    margin: var(--margingrid) 0;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal);
+}
+
+.boton:hover i {
+    transform: translateX(5px) scale(1.5);
+}
+
+.boton i {
+    /* Efecto entrada/salida transition en el padre*/
+    transition: transform 0.5s;
+}
+
+.hero .social {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2em;
+}
+
+/* fin hero */
+
+
+/* inicio OurService*/
+
+main section {
+    padding: 2.188em 1.5em;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section span {
+    color: var(--colorprincipal);
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+}
+
+main section .underline hr {
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+
+main #ourservice .grid {
+    display: grid;
+    grid-column: 1fr;
+    gap: var(--margingrid);
+}
+
+main #ourservice article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #ourservice article i:not(.fa-long-arrow-alt-right) {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    display: inline-block;
+    padding: 0.5em;
+}
+
+main #ourservice h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+main #ourservice p {
+    color: #777;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+/* fin OurService */
+
+/* inicio aboutUs */
+main #aboutus .flex {
+    display: flex;
+    flex-direction: row;
+    gap: var(--margingrid);
+}
+
+main #aboutus h3 {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main #aboutus h4 {
+    margin: 1em 0;
+    color: var(--colorprincipal);
+}
+
+main section p {
+    color: #777;
+    line-height: 1.25em;
+}
+
+main #aboutus .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+main #aboutus img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus figure:hover :is(.marco, img) {
+    transform: rotateZ(0deg);
+}
+
+/* fin aboutus */
+
+
+/* 600px */
+@media(min-width: 37.500em) {
+
+    /* inicio main */
+    main #ourservice .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main #ourservice article:last-child {
+        grid-column: 1/3;
+    }
+
+    main #ourservice article {
+        border-bottom: none;
+        border-left: 1px solid #aaa;
+        padding-left: 1.5em;
+    }
+
+    main #aboutus .flex {
+        flex-direction: column;
+    }
+
+    /* fin main */
+}
+
+/* 768px */
+@media (min-width: 48.000em) {
+
+    /* inicio main */
+    main #ourservice .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main #ourservice article:last-child {
+        grid-column: 3/4;
+    }
+
+    /* fin main */
+
+}

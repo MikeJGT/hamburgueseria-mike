@@ -1,0 +1,284 @@
+/* Reset */
+@import url('./reset.css');
+
+/* Iconos */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=KoHo:wght@300;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Ajustes Iniciales */
+
+
+html {
+    /* para animaciones de punto de ancla. */
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+}
+
+
+main section:last-child {
+    padding-bottom: 80px;
+}
+
+
+.enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+
+/* fin Ajustes Iniciales */
+
+/******* inicio header *********/
+
+/* header-arriba */
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.250em 0;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+}
+
+header .nav-top a span {
+    display: none;
+    color: white;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+/* fin header-arriba*/
+
+
+
+/* header-abajo */
+header nav {
+    padding: 1.250em;
+}
+
+header .hamburguesa {
+    width: 1.875em;
+    cursor: pointer;
+}
+
+header .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    padding-top: 1.25em;
+    width: 100%;
+}
+
+header nav .logo {
+    max-width: 100px;
+
+}
+
+header .menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header .menu li:last-child a {
+    border-bottom: 0px;
+    /*border-bottom: none;*/
+}
+
+header .menu .activo {
+    color: var(--colorprincipal);
+}
+
+header .menu li a {
+    transition: 1s;
+}
+
+header .menu li a:hover {
+    color: var(--colorprincipal);
+}
+
+/* fin header-abajo */
+
+/******** fin header **********/
+
+
+
+/* Titulo de main como h1*/
+
+main .container h1 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main .container>div>span {
+    color: var(--colorprincipal);
+}
+
+main .container .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+}
+
+main .container .underline span {
+    text-align: center;
+    display: block;
+}
+
+main .container .underline hr {
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 100%;
+    top: -1px;
+}
+
+/* fin titulo de main */
+
+
+
+/********* footer ***********/
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.250em 0em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
+
+}
+
+
+/******** end footer *********/
+
+
+
+
+/* 768px */
+@media (min-width: 48.000em) {
+
+    /**** inicio header *****/
+
+    header .nav-top a span {
+        display: inline;
+        font-size: 110%;
+    }
+
+    header .nav-top .container {
+
+        justify-content: space-between;
+    }
+
+    /***** fin header ******/
+
+    footer .container {
+        text-align: left;
+    }
+
+}
+
+/* 1004px */
+@media (min-width: 62.750em) {
+
+    /* inicio header */
+    header .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu {
+        width: auto;
+    }
+
+    header nav .menu {
+        padding-top: 0em;
+        width: auto;
+    }
+
+    header .menu li {
+        display: inline-block;
+    }
+
+    header .menu a {
+        border-bottom: 0px;
+        padding: 0.5em 0 0.5em 1.25em;
+    }
+
+    /* fin header */
+}

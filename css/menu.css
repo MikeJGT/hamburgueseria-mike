@@ -1,0 +1,124 @@
+/* Header y footer (Aquí van el resto de las importaciones)*/
+@import url('./headerFooter.css');
+
+
+
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
+/* inicio menu */
+.todaymenu {
+    background-color: var(--colorsecundario);
+    padding-top: 1em;
+}
+
+.todaymenu .container h1 {
+    color: white;
+}
+
+.todaymenu .container span {
+    color: var(--colorprincipal);
+}
+
+
+.flex-content {
+    padding: 1em;
+}
+
+.flex-content .nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-content .nav-menu li {
+    padding: var(--margingrid);
+    border-radius: 3px;
+}
+
+.flex-content .nav-menu li:first-child {
+    background-color: var(--colorprincipal);
+}
+
+.flex-content .nav-menu li:hover {
+    background-color: var(--colorprincipal);
+}
+
+
+.flex-content .todayoffer {
+    padding: 2em 0;
+}
+
+.flex-content .todayoffer h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.flex-content hr {
+    width: 3em;
+    color: var(--colorprincipal);
+    margin-left: 0px;
+}
+
+.flex-content p {
+    color: #777;
+}
+
+.flex-section h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 120%;
+    padding: 1em 0;
+}
+
+.flex-content span {
+    margin-left: 25px;
+}
+
+.flex-content .enlace {
+    display: inline-block;
+    padding: 1em 0;
+}
+
+
+
+/* 768px */
+@media (min-width: 48.000em) {
+
+
+    .flex-content {
+        display: flex;
+        gap: 4em;
+    }
+
+    .flex-content aside {
+        width: 40%;
+    }
+
+    .flex-section h3 {
+        padding-top: 0;
+    }
+
+    .flex-content .todayoffer {
+        margin-top: 20%;
+    }
+
+    .flex-section article {
+        display: flex;
+        margin: 2em 0;
+    }
+
+    .flex-section .espacio {
+        margin-left: 50px;
+    }
+
+    .flex-section figure {
+        width: 40%;
+    }
+}
