@@ -7,16 +7,6 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=KoHo:wght@300;700&family=Montserrat:wght@400;700&display=swap');
 
-/* 
-    font-family: 'Handlee', cursive;
-    font-family: 'KoHo', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    
-    Naranja: #fa573a
-    Rojo:   #21242e
- */
-
-
 html {
     /* para animaciones de punto de ancla. */
     scroll-behavior: smooth;
@@ -179,8 +169,6 @@ footer a:hover {
     font-size: 250%;
 
 }
-
-
 /******** end footer *********/
 
 /* Hero */
@@ -414,9 +402,6 @@ main #aboutus figure:hover :is(.marco, img) {
 /* fin aboutus */
 
 
-
-
-
 /* fin menu */
 
 /* 600px */
@@ -493,12 +478,7 @@ main #aboutus figure:hover :is(.marco, img) {
     main #ourblog article:last-child {
         grid-column: 3/4;
     }
-
     /* fin blog */
-
-
-    /*inicio menu 
-     fin menu */
 }
 
 /* 1004px */
@@ -526,6 +506,5 @@ main #aboutus figure:hover :is(.marco, img) {
         border-bottom: 0px;
         padding: 0.5em 0 0.5em 1.25em;
     }
-
     /* fin header */
 }
