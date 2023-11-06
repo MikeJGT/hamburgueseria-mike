@@ -1,18 +1,9 @@
-/* Reset */
 @import url('./reset.css');
-
-/* Iconos */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-
-/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=KoHo:wght@300;700&family=Montserrat:wght@400;700&display=swap');
 
-/* Ajustes Iniciales */
-
-
-html {
-    /* para animaciones de punto de ancla. */
-    scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
 }
 
 :root {
@@ -25,8 +16,9 @@ html {
     --anchomaximo: 1100px;
 }
 
-* {
-    box-sizing: border-box;
+html {
+    /* para animaciones de punto de ancla. */
+    scroll-behavior: smooth;
 }
 
 img {
@@ -40,26 +32,20 @@ img {
     margin: 0 auto;
 }
 
-
 body {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
 }
 
-
 main section:last-child {
     padding-bottom: 80px;
 }
-
 
 .enlace {
     text-decoration: none;
     color: var(--colorprincipal);
     font-weight: 700;
 }
-
-
-/* fin Ajustes Iniciales */
 
 /******* inicio header *********/
 
@@ -78,7 +64,6 @@ header .nav-top a {
     text-decoration: none;
     color: var(--colorprincipal);
 }
-
 header .nav-top a span {
     display: none;
     color: white;
@@ -89,7 +74,6 @@ header .nav-top a i {
 }
 
 /* fin header-arriba*/
-
 
 
 /* header-abajo */
@@ -120,7 +104,6 @@ header nav .menu {
 
 header nav .logo {
     max-width: 100px;
-
 }
 
 header .menu a {
@@ -152,7 +135,6 @@ header .menu li a:hover {
 /* fin header-abajo */
 
 /******** fin header **********/
-
 
 
 /* Titulo de main como h1*/
@@ -191,8 +173,6 @@ main .container .underline hr {
 
 /* fin titulo de main */
 
-
-
 /********* footer ***********/
 
 footer {
@@ -222,36 +202,26 @@ footer a:hover {
     bottom: 60px;
     right: 10px;
     font-size: 250%;
-
 }
-
-
 /******** end footer *********/
-
-
 
 
 /* 768px */
 @media (min-width: 48.000em) {
 
     /**** inicio header *****/
-
     header .nav-top a span {
         display: inline;
         font-size: 110%;
     }
-
     header .nav-top .container {
 
         justify-content: space-between;
     }
-
     /***** fin header ******/
-
     footer .container {
         text-align: left;
     }
-
 }
 
 /* 1004px */
@@ -279,6 +249,5 @@ footer a:hover {
         border-bottom: 0px;
         padding: 0.5em 0 0.5em 1.25em;
     }
-
     /* fin header */
 }
