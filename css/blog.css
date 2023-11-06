@@ -1,17 +1,10 @@
 /* Header y footer (Aquí van el resto de las importaciones)*/
 @import url('./headerFooter.css');
 
-
-
-
-
 /* inicio ourblog */
-
 main #ourblog article {
-
     position: relative;
     margin-bottom: var(--margingrid);
-
 }
 
 main #ourblog article>div {
@@ -42,11 +35,6 @@ main #ourblog p {
     line-height: 1.25em;
     margin-bottom: 0.5em;
 }
-
-
-
-
-
 main #ourblog .fecha {
     color: white;
     font-size: 150%;
@@ -59,11 +47,7 @@ main #ourblog .fecha {
     top: 0;
     left: 0;
 }
-
-
 /* fin ourblog */
-
-
 
 
 /* 600px */
@@ -73,26 +57,21 @@ main #ourblog .fecha {
     main #ourblog .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
     main #ourblog article:last-child {
         grid-column: 1/1;
     }
-
     /* fin blog */
 }
 
 
 /* 768px */
 @media (min-width: 48.000em) {
-
     /* inicio blog */
     main #ourblog .grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
     main #ourblog article:last-child {
         grid-column: 3/4;
     }
-
     /* fin blog */
 }
