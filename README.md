@@ -24,6 +24,6 @@ Aquí podrás enlazar y exponer las entradas más relevantes de tu blog. Cuénta
 Si te gusta como ha quedado la plantilla siéntete libre de usarla.
 Aquí te dejo un par de enlaces en los que podrás desplegar este proyecto de forma gratuita.
 
-[Netlify](https://www.netlify.com/)
+[Netlify](https://www.netlify.com/), 
 [Render](https://render.com/)
 
